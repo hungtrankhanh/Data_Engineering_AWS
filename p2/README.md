@@ -20,21 +20,8 @@ Some sample queries to analyze number of user
 $ python analyze.py
 
 ### query_session_with_num_of_user
+![screenshot 1](./img/query_session_with_num_of_user.png)
 
-+------------+-------------+
-| session_id | num_of_user |
-+------------+-------------+
-|    1041    |      11     |
-|    324     |      7      |
-|    255     |      6      |
-|    605     |      6      |
-|    887     |      5      |
-|    888     |      5      |
-|    574     |      5      |
-|    984     |      5      |
-|    269     |      5      |
-|    1079    |      5      |
-+------------+-------------+
 
 
 ### query_on_song_artist_location
