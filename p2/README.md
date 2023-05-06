@@ -1,43 +1,24 @@
-# DWH Project
-> Build an simple ETL with Redshift in Dataware House
+# Data Lake Project
+> Using AWS Glue, AWS S3, Python, and Spark, create or generate Python scripts to build a lakehouse solution in AWS that satisfies these requirements from the STEDI data scientists.
 
 ## Table of Contents
-* [Create Tables](#create-tables)
-* [ETL](#etl)
-* [Sample Queries](#sample-queries)
+* [Landing Zone](#landing-zone)
+* [Trusted Zone](#trusted-zone)
 
 
-## Create Tables
-Create staging tables and analyzing tables, drop all tables if they are existed
-$ python create_tables.py 
+## Landing Zone
+Query Landing Zone Data
 
-## ETL
-Extract json data from S3 into staging tables. Afterwards, continue to extract data from staging tables, then transform data and load them into analyzing tables
-$ python etl.py
+### customer landing data
+![screenshot 1](./img/customer_landing_data_screenshot.png)
 
-## Sample Queries
-Some sample queries to analyze number of user
-$ python analyze.py
+### accelerometer landing data
+![screenshot 2](./img/accelerometer_landing_data_screenshot.png)
 
-### query_session_with_num_of_user
-![screenshot 1](./img/query_session_with_num_of_user.png)
+## Trusted Zone
 
+### customers with no public research allowing shown in landing zone
+![screenshot 3](./img/customer_landing_data_no_public_research_screenshot.png)
 
-
-### query_on_song_artist_location
-![screenshot 2](./img/query_on_song_artist_location.png)
-
-
-
-### query_on_song_artist_latitude
-![screenshot 3](./img/query_on_song_artist_latitude.png)
-
-
-
-### query_on_song_artist_location_with_female
-![screenshot 4](./img/query_on_song_artist_location_with_female.png)
-
-
-
-### query_on_song_artist_location_with_female_paid
-![screenshot 5](./img/query_on_song_artist_location_with_female_paid.png)
+### customers with no public research allowing are not shown in trusted zone
+![screenshot 4](./img/accelerometer_landing_data_screenshot.png)
